@@ -1,0 +1,30 @@
+{
+  "name": "co.koa-cli",
+  "version": "0.0.0",
+  "description": "A Command Line Interface for installing and managine Co.Koa applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaysaurus/co.koa-cli.git"
+  },
+  "keywords": [
+    "nodeJS",
+    "Koa",
+    "MVC",
+    "Mongoose"
+  ],
+  "author": "Jay Edwards <the.jaysaurus@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaysaurus/co.koa-cli/issues"
+  },
+  "homepage": "https://github.com/jaysaurus/co.koa-cli#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jest": "^21.2.1"
+  }
+}
