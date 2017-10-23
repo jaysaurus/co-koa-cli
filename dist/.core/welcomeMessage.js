@@ -1,0 +1,1 @@
+var fs=require("fs");module.exports=function(e){if("development"===e.environment||"test"===e.environment)try{fs.readFileSync(`${e.root}/.core/welcomeMessage.txt`).toString().split("\n").forEach(e=>{console.log(e)})}catch(e){console.log("-- Welcome to Co.Koa --")}};

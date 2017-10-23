@@ -1,0 +1,1 @@
+module.exports=function(e,s){var t=e.replace(/^:/,"");switch(s.environment){case"development":case"test":default:return{get:e=>{switch(t){case"css":case"js":case"html":return`${s.root}/public/${t}/${e}`}}};case process.env.NODE_ENV:return"TODO"}};
