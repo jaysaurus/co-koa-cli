@@ -1,1 +1,0 @@
-module.exports={eq:(e,t)=>e===t,ne:(e,t)=>e!==t,lt:(e,t)=>e<t,gt:(e,t)=>e>t,lte:(e,t)=>e<=t,gte:(e,t)=>e>=t,and:(e,t)=>e&&t,or:(e,t)=>e||t};

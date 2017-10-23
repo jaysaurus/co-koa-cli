@@ -1,7 +1,7 @@
 const gulp = require('gulp');
-const uglifyES = require('uglify-es'); // can be a git checkout
 const composer = require('gulp-uglify/composer');
 const pump = require('pump');
+const uglifyES = require('uglify-es'); // can be a git checkout
 
 const minify = composer(uglifyES, console);
 
@@ -12,22 +12,22 @@ gulp.task('message', () => {
 
 let minifyOptions = { ecma: 8 };
 gulp.task('minifyJS', cb => {
-  ['/app', '/.core/**/*', '/api/**/*'].forEach(dir => {
-    pump([
-      gulp.src(`src${dir}.js`),
-      minify(minifyOptions),
-      gulp.dest(`dist${dir.replace(/\/app|\/\*{2}\/\*$/g, '')}`)
-    ]);
-  });
+  pump([
+    gulp.src(`src/.core/**/*.js`),
+    minify(minifyOptions),
+    gulp.dest(`dist/.core`)
+  ]);
 });
 
 gulp.task('copyConfigs', cb => {
-  ['', 'config/', '.core/**', 'i18n/**'].forEach(dir => {
+  ['', 'config/**/', '.core/**/'].forEach(dir => {
     pump([
-      gulp.src(`src/${dir}/{${dir === 'config/' ? '*.js,' : ''}*.hbs,*.json,*.txt, *.md}`),
-      gulp.dest(`dist/${dir.replace(/\/$|\/\*{2}$/g, '')}`)
+      gulp.src(`src/${dir}{${!dir.match('.core') ? '*.js,' : ''}*.hbs,*.json,*.txt,*.md,LICENSE}`),
+      gulp.dest(`dist/${dir.replace(/\/$|\/\*{2}\/$/g, '')}`)
     ]);
   });
 });
 
-gulp.task('build', ['minifyJS', 'copyConfigs']);
+gulp.task('build', ['minifyJS', 'copyConfigs'], () => {
+  console.log('build succeeded.');
+});
