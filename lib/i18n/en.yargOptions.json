@@ -1,0 +1,5 @@
+{
+  "argvCreate": "build a new Co.Koa application in your current working directory or, if supplied, an absolute directory. Ensure you have permission to write!",
+  "argvMessageLong": "creates a Co.Koa {0}. Must be supplied with a name (without the word \"{0}\" appended to it).",
+  "argvMessageShort": "creates a Co.Koa {0}. Must be supplied with a name."
+}

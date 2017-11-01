@@ -1,0 +1,5 @@
+{
+  "abort": "Aborting project creation.",
+  "failed": "Something went wrong while trying to {0}: {1}",
+  "invalidCommand": "Your command was not recognised, please try again [Y/N]"
+}

@@ -1,0 +1,4 @@
+{
+  "createProject": "Creating new Co.Koa app at: \"{0}\" Continue? [Y/N]",
+  "noArguments": "Please supply a valid option when calling the Co.Koa CLI."
+}
