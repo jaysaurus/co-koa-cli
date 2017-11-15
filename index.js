@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 'use strict';
-
 const echoHandler = require('echo-handler').configure({ messageFolder: `${__dirname}/lib/i18n` });
-// const getCreateCallback = require('./lib/createCallback');
+
 const CLIAction = require('./lib/CLIAction');
-const getYargOptions = require('./lib/yargOptions');
-const options = getYargOptions(echoHandler.load('yargOptions'));
+const YargOptions = require('./lib/YargOptions');
+const options = new YargOptions(echoHandler.load('yargOptions')).describe();
 
 let yargs = require('yargs')
   .options(options)
   .help()
   .alias('help', 'h');
+
 let {argv} = yargs;
 
 const echo = echoHandler.load('index');

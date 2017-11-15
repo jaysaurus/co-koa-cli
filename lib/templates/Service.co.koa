@@ -1,0 +1,9 @@
+// NB. the exported service MUST be instantiable.
+// Supports classical and prototypal designs.
+module.exports = function #name#Service ($) {
+  const _this = this;
+  const #inst# = $('#name#');
+  this.doSomething = () => {
+
+  };
+};
