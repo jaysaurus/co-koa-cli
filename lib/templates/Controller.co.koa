@@ -1,0 +1,17 @@
+module.exports = function #name#Controller ($) {
+  var #name# = $('#name#'); // <- inject #name# Model
+  return {
+    'GET /:id': async (ctx) => {
+
+    },
+    'POST /': async (ctx) => {
+
+    },
+    'PATCH /:id': async (ctx) => {
+
+    },
+    'DELETE /:id': async (ctx) => {
+
+    }
+  };
+};

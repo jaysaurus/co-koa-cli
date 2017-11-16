@@ -2,7 +2,7 @@
 // Supports classical and prototypal designs.
 module.exports = function #name#Service ($) {
   const _this = this;
-  const #inst# = $('#name#');
+  const #name# = $('#name#');
   this.doSomething = () => {
 
   };

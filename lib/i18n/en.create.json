@@ -1,5 +1,6 @@
 {
   "abort": "Aborting project creation.",
   "failed": "Something went wrong while trying to {0}: {1}",
-  "invalidCommand": "Your command was not recognised, please try again [Y/N]"
+  "invalidCommand": "Your command was not recognised, please try again [Y/N]",
+  "noName": "You must provide a name for the new {0}."
 }
