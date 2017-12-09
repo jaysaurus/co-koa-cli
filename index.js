@@ -16,7 +16,7 @@ let {argv} = yargs;
 const echo = echoHandler.load('index');
 try {
   let actionTaken = false;
-  const cliAction = new CLIAction(__dirname, echoHandler, argv, actionTaken);
+  const cliAction = CLIAction(__dirname, echoHandler, argv);
 
   for (const key in options) {
     if (!actionTaken) actionTaken = cliAction.parse(key);

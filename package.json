@@ -1,8 +1,8 @@
 {
-  "name": "co.koa-cli",
-  "version": "0.0.0",
+  "name": "co-koa-cli",
+  "version": "0.5.0",
   "description": "A Command Line Interface for installing and managine Co.Koa applications",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest",
     "test-watch": "nodemon --exec 'npm test'"
@@ -24,15 +24,16 @@
   },
   "homepage": "https://github.com/jaysaurus/co.koa-cli#readme",
   "devDependencies": {
-    "echo-handler": "^1.5.0",
+    "echo-handler": "^1.5.2",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.0",
     "jest": "^21.2.1",
-    "pump": "^1.0.2",
-    "uglify-es": "^3.1.8"
+    "pump": "^1.0.3",
+    "stampit": "^4.0.2",
+    "uglify-es": "^3.2.1"
   },
   "dependencies": {
-    "fs-extra": "^4.0.2",
+    "fs-extra": "^4.0.3",
     "run-sequence": "^2.2.0"
   }
 }

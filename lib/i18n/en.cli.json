@@ -1,3 +1,7 @@
 {
-  "createProject": "Creating new Co.Koa app at: \"{0}\" Continue? [Y/N]"
+  "author": "enter an \"author\" name: ",
+  "createProject": "Creating new Co.Koa app at: \"{0}\". Press ctrl^c to cancel!",
+  "name": "enter an NPM-friendly name for your project: ",
+  "repository": "enter a git repository uri: ",
+  "success": "Project setup successfully.  within your project's home directory, type \"npm i\" to install Co.Koa's dependencies"
 }

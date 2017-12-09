@@ -2,6 +2,7 @@ module.exports = function #name# ($) {
   return {
     schema: {}  // <- Model details go here
     /* ------ OPTIONAL COMPONENTS ----- */
+    // index: {}, // <- custom indexes
     // methods: {}, // <- custom Model instance methods
     // options: {}, // <- mongoose optional configurations
     // statics: {}, // <- custom Model static methods
