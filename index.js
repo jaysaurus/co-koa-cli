@@ -2,17 +2,17 @@
 'use strict';
 
 const echoHandler = require('echo-handler').configure({ messageFolder: `${__dirname}/lib/i18n` });
+const yargs = require('yargs');
 
 const CLIAction = require('./lib/CLIAction');
 const YargOptions = require('./lib/YargOptions');
 const options = YargOptions(echoHandler.load('yargOptions')).describe();
 
-let yargs = require('yargs')
-  .options(options)
-  .help()
-  .alias('help', 'h');
-
-let {argv} = yargs;
+const {argv} =
+  yargs
+    .options(options)
+    .help()
+    .alias('help', 'h');
 
 const echo = echoHandler.load('index');
 try {
