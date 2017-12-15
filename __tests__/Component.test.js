@@ -1,7 +1,7 @@
 const Component = require('../lib/Component.js');
 
 jest.mock('../lib/helpers/ComponentHelper.js');
- jest.mock('fs-extra');
+jest.mock('fs-extra');
 describe('Component tests', () => {
   test('build should manufacture a component if there is a component name', () => {
     let exitValue = undefined;
