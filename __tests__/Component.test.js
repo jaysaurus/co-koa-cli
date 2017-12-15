@@ -20,7 +20,7 @@ describe('Component tests', () => {
     expect(logValue[1]).toBe('Example');
     expect(logValue[2]).toBe('dir/api/somethings');
     const fs = require('../__mocks__/fs-extra.js');
-    const observer = fs.__getOutputFileSync();
+    const observer = fs.__getObserver('outputFileSync');
     expect(observer[0]).toBe('dir/api/somethings/ExampleSomething.js');
     expect(observer[1]).toBe('test');
     expect(exitValue).toBe(0);
