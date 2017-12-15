@@ -76,7 +76,6 @@ describe('CLIAction tests', () => {
       expect(exitCalled).toBe(true);
       expect(logObserver[0]).toEqual('createProject');
       expect(logObserver[1]).toEqual('abort');
-      console.log('cwdUsed');
       expect(cwdUsed).toBe(true);
     });
 
