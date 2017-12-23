@@ -3,7 +3,8 @@ const yargs = require('yargs');
 const {argv} =
   yargs.options({
     environment: {
-      describe: 'choose the environment to run',
+      alias: 'e',
+      describe: 'choose the environment to run, defaults to "development"',
       string: true
     }
   })
@@ -13,7 +14,8 @@ const {argv} =
 try {
   const coKoa =
     new CoKoa(
-      __dirname, argv['environment'] || 'development') // <- environment goes here!
+      __dirname,
+      argv['environment'] || 'development')
       .launch();
   coKoa // koa-router is exposed below as "coKoa.router"
     .app
