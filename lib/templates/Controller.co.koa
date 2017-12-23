@@ -4,16 +4,16 @@ module.exports = function #name#Controller ($) {
   const #name# = $('#name#'); // <- inject #name# Model
 
   return {
-    'GET /:id': async (ctx) => {
+    async 'GET /:id' (ctx) {
 
     },
-    'POST /': async (ctx) => {
+    async 'POST /' (ctx) {
 
     },
-    'PATCH /:id': async (ctx) => {
+    async 'PATCH /:id' (ctx) {
 
     },
-    'DELETE /:id': async (ctx) => {
+    async 'DELETE /:id' (ctx) {
 
     }
   };
