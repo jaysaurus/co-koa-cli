@@ -41,7 +41,7 @@ describe('ProjectHelper tests', () => {
     fs.__setData('test #variable#');
     projectHelper.copyPackageJSON({variable: 'data was injected'});
     const spy1 = fs.__getObserver('readFileSync')[0];
-    expect(spy1).toBe('from/lib/templates/package.co.koa');
+    expect(spy1).toBe('from/dist/package.json');
     const spy2 = fs.__getObserver('outputFileSync');
     expect(spy2[0]).toBe('destination/package.json');
     expect(spy2[1]).toBe('test data was injected');
