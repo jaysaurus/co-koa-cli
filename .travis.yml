@@ -5,4 +5,4 @@ repo_token: qlSjatEPNJCJi0yhHMVKLoxuUDu7z4LKL
 branches:
     only:
       - master
- +    - /^greenkeeper/.*$/
+      - /^greenkeeper/.*$/
