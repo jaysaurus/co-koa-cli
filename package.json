@@ -28,13 +28,13 @@
     "echo-handler": "^1.5.2",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.0",
-    "jest": "^21.2.1",
-    "pump": "^1.0.3",
+    "jest": "^22.0.4",
+    "pump": "^2.0.0",
     "stampit": "^4.0.2",
     "uglify-es": "^3.2.1"
   },
   "dependencies": {
-    "fs-extra": "^4.0.3",
+    "fs-extra": "^5.0.0",
     "run-sequence": "^2.2.0"
   }
 }
