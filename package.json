@@ -4,7 +4,7 @@
   "description": "A Command Line Interface for installing and managine Co.Koa applications",
   "main": "app.js",
   "scripts": {
-    "test": "jest --coverage --config ./jest.config.js",
+    "test": "jest --config ./jest.config.js --coverage && cat ./coverage/lcov.info | coveralls",
     "test-watch": "nodemon --exec 'npm test'"
   },
   "repository": {
