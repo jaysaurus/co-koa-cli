@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jaysaurus/co.koa-cli#readme",
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "echo-handler": "^1.5.2",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.0",
