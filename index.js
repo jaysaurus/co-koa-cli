@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 'use strict';
 
 const echoHandler = require('echo-handler').configure({ messageFolder: `${__dirname}/lib/i18n` });
