@@ -18,6 +18,9 @@
     "Mongoose"
   ],
   "author": "Jay Edwards <the.jaysaurus@gmail.com>",
+  "bin": {
+    "co-koa-cli": "./index.js"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jaysaurus/co.koa-cli/issues"
