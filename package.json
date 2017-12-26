@@ -28,16 +28,16 @@
   "homepage": "https://github.com/jaysaurus/co.koa-cli#readme",
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "echo-handler": "^1.5.2",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.0",
     "jest": "^22.0.4",
     "pump": "^2.0.0",
-    "stampit": "^4.0.2",
     "uglify-es": "^3.3.0"
   },
   "dependencies": {
+    "echo-handler": "^1.5.2",
     "fs-extra": "^5.0.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "stampit": "^4.0.2"
   }
 }
