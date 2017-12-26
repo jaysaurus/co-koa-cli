@@ -38,6 +38,7 @@
     "echo-handler": "^1.5.2",
     "fs-extra": "^5.0.0",
     "run-sequence": "^2.2.0",
-    "stampit": "^4.0.2"
+    "stampit": "^4.0.2",
+    "yargs": "^10.0.3"
   }
 }
