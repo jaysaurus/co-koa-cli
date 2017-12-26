@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-'use strict';
+let path = require('path');
 
 const echoHandler = require('echo-handler').configure({ messageFolder: `${__dirname}/lib/i18n` });
 const yargs = require('yargs');
