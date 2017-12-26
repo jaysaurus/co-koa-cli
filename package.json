@@ -32,7 +32,7 @@
     "gulp-uglify": "^3.0.0",
     "jest": "^22.0.4",
     "pump": "^2.0.0",
-    "uglify-es": "^3.3.0"
+    "uglify-es": "^3.3.2"
   },
   "dependencies": {
     "echo-handler": "^1.5.2",
