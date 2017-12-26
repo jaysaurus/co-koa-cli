@@ -1,4 +1,4 @@
-const CoKoa = require('../co-koa-core/src/index.js');
+const CoKoa = require('co-koa-core');
 const yargs = require('yargs');
 const {argv} =
   yargs.options({
