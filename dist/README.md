@@ -1,31 +1,40 @@
-# Co.Koa 0.4.0
-An opinionated MVC; inspired by Grails MVC, written for Koa.
+[![Build Status](https://travis-ci.org/jaysaurus/co-koa-cli.svg?branch=master)](https://travis-ci.org/jaysaurus/co-koa-cli)
+[![Coverage Status](https://coveralls.io/repos/github/jaysaurus/co-koa-cli/badge.svg?branch=master)](https://coveralls.io/github/jaysaurus/co-koa-cli?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaysaurus/co-koa-cli.svg)](https://greenkeeper.io/)
+[![Known Vulnerabilities](https://snyk.io/test/github/jaysaurus/co-koa-cli/badge.svg)](https://snyk.io/test/github/jaysaurus/co-koa-cli)
 
-**Co.Koa** obeys convention over configuration. It is the fruit of a number of years of study and industry work with MVC products. **Co.Koa's** greatest strength comes in its implementation of Dependency Management.  Controllers, Models and Services are each supplied with a powerful callback that reads and feels like a JQuery call.  No need to worry about requiring reams of files from across your project.  This build is currently early alpha and, as such, available here for research and interest purposes.
+# co-koa-cli
+A Command Line Interface for installing and managing Co.Koa applications
 
-Comprehensive documentation will evolve over time.
+**Installation of co-koa-cli**
+co-koa-cli is available to install on NPM:
+`npm i co-koa-cli -g`
 
-## Structure
+**Installing a new Co.Koa project on your system**
+with the co-koa-cli installed, in terminal, simply navigate to a desired directory in terminal and type:
+`co-koa-cli --create`
 
+fill in a few details (these can be changed afterwards by modifying your project's package.json)
+once installation is finished, type `npm install` to download the project's core dependencies.
 
-## Dependency Injection
+That's it, you're all setup.  go to /config/config.json and wire up your <a href="https://www.mongodb.com/">mongoDB</a> connection! (Co.Koa **requires** a MongoDB instance.  A MongoDB instance must be present and running to start a Co.Koa instance.  Please visit <a href="https://www.mongodb.com/">mongoDB</a> for more information);
 
+**Options**
+```
+  --version           Show version number                              [boolean]
 
-## Model
+  --create            build a new Co.Koa application in your current working
+                      directory or, if supplied, an absolute directory. Ensure
+                      you have permission to write!                     [string]
 
-## Controller
+  --createController  creates a Co.Koa Controller. Must be supplied with a name
+                      (without the word "Controller" appended to it).   [string]
 
-## Views
-**Co.Koa** Supports handlebars .hbs; this is a work in progress (I'm currently awaiting an update to koa-hbs-renderer so it can implement support for multiple helpers in one file) but should be available soon.  More details to follows
+  --createModel       creates a Co.Koa Model. Must be supplied with a name.
+                                                                        [string]
 
-## To Do
-- [x] Controller Implementation
-- [x] Model Implementation (improved)
-- [x] Dependency Injection Implementation
-- [x] Support for Jest testing
-- [x] Middleware implementation
-- [ ] Support for Gulp build and asset management (sort of there)
-- [ ] Command line interface
-- [x] Enable view support for .hbs
+  --createService     creates a Co.Koa Service. Must be supplied with a name
+                      (without the word "Service" appended to it).      [string]
 
-Co.Koa will implement Grunt for asset management
+  --help, -h          Show help                                        [boolean]
+```
