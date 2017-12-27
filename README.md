@@ -38,3 +38,5 @@ That's it, you're all setup.  go to /config/config.json and wire up your <a href
 
   --help, -h          Show help                                        [boolean]
 ```
+
+for more information on **Co.Koa** and its installation, navigate to <a href="https://github.com/jaysaurus/Co.Koa">the Co.Koa github page</a>.
