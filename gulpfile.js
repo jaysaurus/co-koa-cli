@@ -20,23 +20,35 @@ gulp.task('message', () => {
 // });
 
 gulp.task('copyAPI', cb => {
-  ['Enums.js'].forEach(dir => {
+  ['Enums.js', 'controllers/IndexController.js'].forEach(dir => {
+    const arr = dir.split('/');
+    let str = '';
+    if (arr.length > 1) {
+      for (let i = 0; i <= (arr.length - 2); i++) {
+        str = `dist/api/${arr[i]}`;
+      }
+    } else str = 'dist/api';
     pump([
       gulp.src(`src/api/${dir}`),
-      gulp.dest(`dist/api`)
+      gulp.dest(str)
     ]);
   });
 });
 
-gulp.task('copyConfigs', cb => {
+gulp.task('copyMisc', cb => {
   ['', 'config/**/'].forEach(dir => {
+    const dest = (dir) ? `/${dir.replace(/\/$|\/\*{2}\/$/g, '')}` : '';
     pump([
-      gulp.src(`src/${dir}{'*.js,*.hbs,*.json,*.txt,*.md,LICENSE}`),
-      gulp.dest(`dist/${dir.replace(/\/$|\/\*{2}\/$/g, '')}`)
+      gulp.src(`src/${dir}{*.js,*.hbs,*.json,*.txt,*.md,LICENSE}`),
+      gulp.dest(`dist${dest}`)
     ]);
   });
+  pump([
+    gulp.src('src/public/html/index.html'),
+    gulp.dest('dist/public/html')
+  ]);
 });
 
-gulp.task('build', ['copyAPI', 'copyConfigs'], () => {
+gulp.task('build', ['copyAPI', 'copyMisc'], () => {
   console.log('build succeeded.');
 });
