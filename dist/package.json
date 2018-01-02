@@ -17,7 +17,7 @@
   "repository": "https://github.com/jaysaurus/Co.Koa.git",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "co-koa-core": "^0.12.1",
+    "co-koa-core": "^0.12.4",
     "dependencies": "0.0.1",
     "echo-handler": "^1.5.2",
     "fs": "0.0.1-security",
