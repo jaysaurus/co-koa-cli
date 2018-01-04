@@ -1,6 +1,6 @@
 {
   "name": "co-koa-cli",
-  "version": "0.11.3",
+  "version": "0.12.0",
   "description": "A Command Line Interface for installing and managine Co.Koa applications",
   "main": "app.js",
   "scripts": {
