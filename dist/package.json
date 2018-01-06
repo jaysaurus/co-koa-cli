@@ -16,7 +16,6 @@
   "license": "MIT",
   "repository": "#repository#",
   "dependencies": {
-    "bluebird": "^3.5.1",
     "co-koa-core": "^0.14.0"
   },
   "devDependencies": {}
