@@ -3,8 +3,11 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/jaysaurus/co-koa-cli.svg)](https://greenkeeper.io/)
 [![Test for Vulnerabilities](https://snyk.io/test/github/jaysaurus/co-koa-cli/badge.svg)](https://snyk.io/test/github/jaysaurus/co-koa-cli)
 
+<a title="Co.Koa on github" href="https://jaysaurus.github.io/Co.Koa">
+<img alt="Co.Koa header" title="Co.Koa" style="margin: 0 15%; width: 70%" src="https://raw.githubusercontent.com/jaysaurus/Co.Koa/master/siteStrapCoKoa.png?sanitize=true" />
+</a>
 # co-koa-cli
-A Command Line Interface for installing and managing Co.Koa applications
+A Command Line Interface for installing and managing [Co.Koa MVC](http://cokoajs.com) applications.
 
 **Installation of co-koa-cli**
 co-koa-cli is available to install on NPM:
