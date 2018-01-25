@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": "#repository#",
   "dependencies": {
-    "co-koa-core": "^0.21.0"
+    "co-koa-core": "^0.22.1"
   },
   "devDependencies": {}
 }
