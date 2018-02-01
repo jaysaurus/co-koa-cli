@@ -3,7 +3,9 @@ module.exports = (env, envConfig, mongoose) => {
     case 'development':
     case 'test':
       mongoose.Promise = global.Promise;
-      mongoose.connect(envConfig['mongoDB_URI'], { useMongoClient: true });
+      mongoose
+        .connect(envConfig['mongoDB_URI'])
+        .catch(e => { console.error(e.message); });
       envConfig.mongoose = mongoose;
       return envConfig;
 
