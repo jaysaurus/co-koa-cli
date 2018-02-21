@@ -1,5 +1,5 @@
 TN:
-SF:/home/jay/codeBase/co-koa-cli/lib/CLIAction.js
+SF:/home/jay/codeBase/node/co-koa-cli/lib/CLIAction.js
 FN:17,createProject
 FN:19,(anonymous_1)
 FN:20,(anonymous_2)
@@ -64,7 +64,7 @@ BRF:10
 BRH:10
 end_of_record
 TN:
-SF:/home/jay/codeBase/co-koa-cli/lib/Component.js
+SF:/home/jay/codeBase/node/co-koa-cli/lib/Component.js
 FN:12,firstLetterToUpper
 FN:16,(anonymous_1)
 FN:40,(anonymous_2)
@@ -108,7 +108,7 @@ BRF:6
 BRH:6
 end_of_record
 TN:
-SF:/home/jay/codeBase/co-koa-cli/lib/Project.js
+SF:/home/jay/codeBase/node/co-koa-cli/lib/Project.js
 FN:9,(anonymous_0)
 FN:23,(anonymous_1)
 FNF:2
@@ -131,7 +131,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/jay/codeBase/co-koa-cli/lib/YargOptions.js
+SF:/home/jay/codeBase/node/co-koa-cli/lib/YargOptions.js
 FN:7,(anonymous_0)
 FN:30,(anonymous_1)
 FNF:2
@@ -149,7 +149,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/jay/codeBase/co-koa-cli/lib/helpers/AbstractHelper.js
+SF:/home/jay/codeBase/node/co-koa-cli/lib/helpers/AbstractHelper.js
 FN:10,(anonymous_0)
 FNF:1
 FNH:1
@@ -172,7 +172,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:/home/jay/codeBase/co-koa-cli/lib/helpers/ComponentHelper.js
+SF:/home/jay/codeBase/node/co-koa-cli/lib/helpers/ComponentHelper.js
 FN:10,(anonymous_0)
 FN:15,(anonymous_1)
 FN:23,(anonymous_2)
@@ -196,7 +196,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/jay/codeBase/co-koa-cli/lib/helpers/ProjectHelper.js
+SF:/home/jay/codeBase/node/co-koa-cli/lib/helpers/ProjectHelper.js
 FN:28,(anonymous_0)
 FN:42,(anonymous_1)
 FN:53,(anonymous_2)
