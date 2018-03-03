@@ -30,14 +30,14 @@
     "coveralls": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.0",
-    "jest": "^22.0.4",
+    "jest": "^22.4.2",
     "pump": "^3.0.0",
-    "uglify-es": "^3.3.2"
+    "uglify-es": "^3.3.9"
   },
   "dependencies": {
-    "echo-handler": "^1.5.2",
+    "echo-handler": "^1.8.2",
     "fs-extra": "^5.0.0",
-    "run-sequence": "^2.2.0",
+    "run-sequence": "^2.2.1",
     "stampit": "^4.0.2",
     "yargs": "^11.0.0"
   }

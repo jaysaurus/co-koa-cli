@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --coverage",
-    "test-watch": "nodemon --exec 'npm test'"
+    "test-watch": "nodemon --exec 'npm test'",
+    "cokoa": "node app.js",
+    "dev-with-vue": "node app.js & cd public && npm run dev",
+    "public": "cd public && npm run"
   },
   "keywords": [
     "nodeJS",
@@ -16,7 +19,7 @@
   "license": "MIT",
   "repository": "#repository#",
   "dependencies": {
-    "co-koa-core": "^0.23.0"
+    "co-koa-core": "^1.0.1"
   },
   "devDependencies": {}
 }
