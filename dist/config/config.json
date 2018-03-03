@@ -11,5 +11,9 @@
     }
   },
   "messageFolder": "./i18n/",
-  "useHBS": true
+  "optionalModules": {
+    "koa-hbs-renderer": true,
+    "koa-locale": true,
+    "@koa/cors": true
+  }
 }
