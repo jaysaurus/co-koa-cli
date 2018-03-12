@@ -15,5 +15,6 @@
     "koa-hbs-renderer": true,
     "koa-locale": true,
     "@koa/cors": true
-  }
+  },
+  "useMongoose": true
 }
