@@ -2,12 +2,10 @@
   "defaultLanguage":"en",
   "environment": {
     "test": {
-      "port": 3000,
-      "mongoDB_URI": "mongodb://localhost:27017/coKoaTest"
+      "port": 3000
     },
     "development": {
-      "port": 3000,
-      "mongoDB_URI": "mongodb://localhost:27017/coKoa"
+      "port": 3000
     }
   },
   "messageFolder": "./i18n/",
@@ -15,6 +13,5 @@
     "koa-hbs-renderer": true,
     "koa-locale": true,
     "@koa/cors": true
-  },
-  "useMongoose": true
+  }
 }

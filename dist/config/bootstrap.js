@@ -1,4 +1,2 @@
-module.exports = {
-  async bootstrap ($) {
-  }
+module.exports = async function bootstrap ($) {
 };

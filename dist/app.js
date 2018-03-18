@@ -1,8 +1,10 @@
 const fs = require('fs');
+const mongoosePlugin = require('co-koa-mongoose-plugin');
+
 if (fs.existsSync('./node_modules')) {
   const CoKoa = require('co-koa-core');
   try {
-    const coKoa = CoKoa(__dirname).launch();
+    const coKoa = CoKoa(__dirname).launch(mongoosePlugin());
     coKoa // koa-router is exposed below as "coKoa.router"
       .app
       .use(coKoa.router.routes())
