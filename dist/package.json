@@ -19,6 +19,7 @@
   "license": "MIT",
   "repository": "#repository#",
   "dependencies": {
+    "co-koa-cli": "^1.5.1",
     "co-koa-core": "^1.7.0",
     "co-koa-mongoose-plugin": "^1.1.0"
   },
