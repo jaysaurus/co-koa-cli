@@ -22,9 +22,15 @@ with the co-koa-cli installed, in terminal, simply navigate to a desired directo
 fill in a few details (these can be changed afterwards by modifying your project's package.json)
 once installation is finished, type `npm install` to download the project's core dependencies.
 
-That's it, you're all setup.  go to /config/config.json and wire up your <a href="https://www.mongodb.com/">mongoDB</a> connection! (Co.Koa **requires** a MongoDB instance.  A MongoDB instance must be present and running to start a Co.Koa instance.  Please visit <a href="https://www.mongodb.com/">mongoDB</a> for more information);
+That's it, you're all setup.  By default, Co.Koa ships with the [co-koa-mongoose-plugin](https://github.com/jaysaurus/co-koa-mongoose-plugin/blob/master/index.js).  This will use ``'mongodb://localhost:27017/coKoa'`` as its connection string. for more information visit the links below:
 
-**Options**
+**Useful Links**
+- [cokoa installation & execution wiki](https://github.com/jaysaurus/Co.Koa/wiki)
+- [cokoajs documentation](http://cokoajs.com)
+- [co-koa-mongoose-plugin](https://github.com/jaysaurus/co-koa-mongoose-plugin/)
+- <a href="https://www.mongodb.com/">mongoDB</a>
+
+**CLI Options**
 ```
   --version           Show version number                              [boolean]
 
