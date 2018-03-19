@@ -22,7 +22,9 @@ with the co-koa-cli installed, in terminal, simply navigate to a desired directo
 fill in a few details (these can be changed afterwards by modifying your project's package.json)
 once installation is finished, type `npm install` to download the project's core dependencies.
 
-That's it, you're all setup.  By default, Co.Koa ships with the [co-koa-mongoose-plugin](https://github.com/jaysaurus/co-koa-mongoose-plugin/blob/master/index.js).  This will use ``'mongodb://localhost:27017/coKoa'`` as its connection string. for more information visit the links below:
+That's it, you're all setup!
+
+**note:** By default, Co.Koa ships with the [co-koa-mongoose-plugin](https://www.npmjs.com/package/co-koa-mongoose-plugin).  This will use `'mongodb://localhost:27017/coKoa'` as its connection string. for more information on this and other aspects of co-koa and Mongo, see the links below:
 
 **Useful Links**
 - [cokoa installation & execution wiki](https://github.com/jaysaurus/Co.Koa/wiki)
