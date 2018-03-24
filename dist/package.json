@@ -21,7 +21,7 @@
   "dependencies": {
     "co-koa-cli": "^1.6.0",
     "co-koa-core": "^1.7.0",
-    "co-koa-mongoose-plugin": "^1.3.0"
+    "co-koa-mongoose-plugin": "^1.3.1"
   },
   "devDependencies": {}
 }
