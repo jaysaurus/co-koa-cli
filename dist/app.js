@@ -1,7 +1,7 @@
 const fs = require('fs');
-const mongoosePlugin = require('co-koa-mongoose-plugin');
 
 if (fs.existsSync('./node_modules')) {
+  const mongoosePlugin = require('co-koa-mongoose-plugin');
   const CoKoa = require('co-koa-core');
   try {
     const coKoa = CoKoa(__dirname).launch(mongoosePlugin());
