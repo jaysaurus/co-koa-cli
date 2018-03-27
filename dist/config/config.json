@@ -1,5 +1,6 @@
 {
-  "defaultLanguage":"en",
+  "defaultLanguage": "en",
+  "dependencyRegister": {},
   "environment": {
     "test": {
       "port": 3000
