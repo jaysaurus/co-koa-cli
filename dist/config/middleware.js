@@ -1,4 +1,4 @@
-module.exports = function ($, conf) {
+module.exports = function ($) {
   return {
     async logRequest (ctx, next) {
       const start = new Date();
