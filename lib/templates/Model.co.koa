@@ -3,8 +3,9 @@
 module.exports = function #name# ($) {
   return {
     _modelType: 'mongoose',
-    schema: {}  // <- Model details go here
+    schema: {} // <- Model details go here
     /* ------ OPTIONAL COMPONENTS ----- */
+    // hooks: {}, // <- pre/post event hooks
     // index: {}, // <- custom secondary indexes
     // methods: {}, // <- custom Model instance methods
     // options: {}, // <- mongoose optional configurations
