@@ -20,9 +20,9 @@
   "repository": "#repository#",
   "dependencies": {
     "co-koa-core": "^1.8.4",
-    "co-koa-mongoose-plugin": "^1.4.0"
+    "co-koa-mongoose-plugin": "^1.6.0"
   },
   "devDependencies": {
-    "co-koa-cli": "^1.9.0"
+    "co-koa-cli": "^1.10.0"
   }
 }
