@@ -15,5 +15,5 @@
     "koa-locale": true,
     "@koa/cors": true
   },
-  "welcomeMessage": true
+  "welcomeMessage": false
 }
