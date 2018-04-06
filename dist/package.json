@@ -23,6 +23,6 @@
     "co-koa-mongoose-plugin": "^1.6.0"
   },
   "devDependencies": {
-    "co-koa-cli": "^1.10.0"
+    "co-koa-cli": "^1.10.1"
   }
 }
