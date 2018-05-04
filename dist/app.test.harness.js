@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const mongoosePlugin = require('co-koa-mongoose-plugin');
 process.argv.push('-e');
 process.argv.push('test');
-const CoKoa = require('../co-koa-core/index.js');
+const CoKoa = require('co-koa-core');
 module.exports = {
   init () {
     try {
