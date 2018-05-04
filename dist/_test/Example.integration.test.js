@@ -3,11 +3,10 @@ const coKoa = testHarness.init();
 describe('Demonstrative Integration Test Suite', async () => {
   test('An integration test', async () => {
     try {
-      /* EXAMPLE:
-      * const SomeModel = coKoa.$('SomeModel');
-      * const someModel = await new System({ name: 'DnD' }).save();
-      * expect(typeof someModel).toBe('object');
-      */
+      // EXAMPLE:
+      // const Example = coKoa.$('Example');
+      // const eg = await new Example({ name: 'I am an example' }).save();
+      // expect(typeof eg).toBe('object');
       expect('test').toBe('test');
     } catch (e) {
       console.error(e.message)
