@@ -7,6 +7,12 @@
     "test": "jest --config ./jest.config.js --coverage && cat ./coverage/lcov.info | coveralls",
     "test-watch": "nodemon --exec 'npm test'"
   },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/_test"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jaysaurus/co.koa-cli.git"
