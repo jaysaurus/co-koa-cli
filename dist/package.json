@@ -9,6 +9,12 @@
     "cokoa": "node app.js",
     "dev-with-vue": "node app.js & cd public && npm run dev",
     "public": "cd public && npm run"
+  },  
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/public/"
+    ]
   },
   "keywords": [
     "nodeJS",
