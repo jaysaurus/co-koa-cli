@@ -17,10 +17,14 @@ describe('YargOptions test', () => {
   });
   it('should have createModel that returns argvMessageShort string', () => {
     expect(observer[3]).toBe('argvMessageShort');
-    expect(observer[4]).toBe('Model');
+    expect(observer[4]).toBe('Jest Integration Test');
   });
   it('should have createService that returns argvMessageLong string', () => {
-    expect(observer[5]).toBe('argvMessageLong');
-    expect(observer[6]).toBe('Service');
+    expect(observer[5]).toBe('argvMessageShort');
+    expect(observer[6]).toBe('Model');
+  });
+  it('should have createService that returns argvMessageLong string', () => {
+    expect(observer[7]).toBe('argvMessageLong');
+    expect(observer[8]).toBe('Service');
   });
 });

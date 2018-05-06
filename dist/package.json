@@ -11,9 +11,9 @@
     "public": "cd public && npm run"
   },
   "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/public/"
+    "roots": ["_test"],
+    "collectCoverageFrom": [
+      "api/**/*.js"
     ]
   },
   "keywords": [
@@ -29,6 +29,6 @@
     "co-koa-mongoose-plugin": "^1.7.0"
   },
   "devDependencies": {
-    "co-koa-cli": "^1.14.4"
+    "co-koa-cli": "^1.15.0"
   }
 }

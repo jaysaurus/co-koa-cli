@@ -1,0 +1,21 @@
+const testHarness = require('../app.test.harness.js');
+const coKoa = testHarness.init();
+describe('Integration Test Suite For #name#', async () => {
+  const $ = coKoa.$
+  const #name# = $('#name#');
+
+  test('An integration test', async () => {
+    try {
+      // EXAMPLE:
+      const result = await new #name#({ }).save();
+      expect(typeof result).toBe('object');
+    } catch (e) {
+      console.error(e.message)
+    }
+  });
+
+  afterAll((done) => {
+    coKoa.app.close() // close the Koa app listener
+    testHarness.destroy(done) // (optional) empty test database
+  });
+});
