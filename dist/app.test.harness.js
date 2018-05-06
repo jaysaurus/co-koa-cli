@@ -4,11 +4,11 @@ process.argv.push('-e');
 process.argv.push('test');
 const CoKoa = require('co-koa-core');
 module.exports = {
-  init () {
+  init (port = 3000) {
     try {
       const coKoa = CoKoa(__dirname).launch();
       const harness = mongoosePlugin({
-        connectionString: 'mongodb://localhost:27017/co-koa-test'
+        connectionString: 'mongodb://localhost:27017/e-bard-test'
       });
       harness.init(coKoa.app, coKoa.$);
       return {
@@ -16,7 +16,7 @@ module.exports = {
         app: coKoa.app
           .use(coKoa.router.routes())
           .use(coKoa.router.allowedMethods())
-          .listen(coKoa.port)
+          .listen(port)
       };
     } catch (e) {
       console.error(
@@ -25,7 +25,7 @@ module.exports = {
           : 'something unexpected brought the server down:');
     }
   },
-  destroy (coKoa, done) {
+  async destroy (coKoa, done) {
     console.log('closing mongoose connection...');
     Object.keys(mongoose.connection.collections).forEach(collection => {
       mongoose.connection.collections[collection].drop(
@@ -34,6 +34,6 @@ module.exports = {
           console.error(`failed to drop ${collection} ${err}`);
         });
     });
-    mongoose.disconnect(done);
+    await mongoose.disconnect(done);
   }
 };

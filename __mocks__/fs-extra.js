@@ -4,7 +4,8 @@ var observer = {
   copySync: [],
   ensureDirSync: [],
   outputFileSync: [],
-  readFileSync: []
+  readFileSync: [],
+  readdirSync: []
 };
 
 fs.copySync = function (from, to) {
@@ -25,6 +26,12 @@ var data = '';
 fs.__setData = function (dat) {
   data = dat;
 };
+
+fs.readdirSync = function (dir) {
+  observer['readdirSync'].push(1);
+  return 1;
+};
+
 
 fs.readFileSync = function (dir) {
   observer['readFileSync'].push(dir);

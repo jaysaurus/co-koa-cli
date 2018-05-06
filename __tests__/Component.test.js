@@ -29,7 +29,6 @@ describe('Component tests', () => {
     expect(observer[2]).toBe('dir/api/models/Example.js');
 
     component.build('createIntegrationTest', 'Example');
-    console.log(observer);
     expect(observer[4]).toBe('dir/_test/Example.integration.test.js');
   });
   test('build returns an error message because no component name was supplied', () => {

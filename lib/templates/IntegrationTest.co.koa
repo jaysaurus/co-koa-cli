@@ -1,12 +1,12 @@
 const testHarness = require('../app.test.harness.js');
-const coKoa = testHarness.init();
+// if running tests in a batch, consider using
+const coKoa = testHarness.init(#port#);
 describe('Integration Test Suite For #name#', async () => {
   const $ = coKoa.$
   const #name# = $('#name#');
 
   test('An integration test', async () => {
     try {
-      // EXAMPLE:
       const result = await new #name#({ }).save();
       expect(typeof result).toBe('object');
     } catch (e) {
@@ -14,8 +14,8 @@ describe('Integration Test Suite For #name#', async () => {
     }
   });
 
-  afterAll((done) => {
-    coKoa.app.close() // close the Koa app listener
-    testHarness.destroy(done) // (optional) empty test database
+  afterAll(async (done) => {
+    await coKoa.app.close() // close the Koa app listener
+    await testHarness.destroy(done) // (optional) empty test database
   });
 });

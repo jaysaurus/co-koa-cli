@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1525567662130" clover="3.2.0">
-  <project timestamp="1525567662131" name="All files">
-    <metrics statements="110" coveredstatements="110" conditionals="24" coveredconditionals="24" methods="24" coveredmethods="24" elements="158" coveredelements="158" complexity="0" loc="110" ncloc="110" packages="2" files="7" classes="7">
+<coverage generated="1525605711642" clover="3.2.0">
+  <project timestamp="1525605711642" name="All files">
+    <metrics statements="114" coveredstatements="114" conditionals="26" coveredconditionals="26" methods="25" coveredmethods="25" elements="165" coveredelements="165" complexity="0" loc="114" ncloc="114" packages="2" files="7" classes="7">
       <package name="lib">
         <metrics statements="71" coveredstatements="71" conditionals="20" coveredconditionals="20" methods="16" coveredmethods="16"/>
         <file name="CLIAction.js" path="/home/jay/codeBase/co-koa-cli/lib/CLIAction.js">
@@ -55,8 +55,8 @@
           <line num="26" count="4" type="stmt"/>
           <line num="27" count="4" type="cond" truecount="2" falsecount="0"/>
           <line num="28" count="3" type="stmt"/>
-          <line num="29" count="3" type="stmt"/>
-          <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="29" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="32" count="3" type="stmt"/>
           <line num="33" count="3" type="stmt"/>
           <line num="36" count="3" type="stmt"/>
           <line num="37" count="1" type="stmt"/>
@@ -89,29 +89,33 @@
         </file>
       </package>
       <package name="lib.helpers">
-        <metrics statements="39" coveredstatements="39" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8"/>
+        <metrics statements="43" coveredstatements="43" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="9"/>
         <file name="AbstractHelper.js" path="/home/jay/codeBase/co-koa-cli/lib/helpers/AbstractHelper.js">
           <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
           <line num="3" count="3" type="stmt"/>
           <line num="5" count="3" type="stmt"/>
-          <line num="9" count="8" type="cond" truecount="2" falsecount="0"/>
-          <line num="10" count="7" type="stmt"/>
-          <line num="11" count="8" type="stmt"/>
-          <line num="12" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="9" count="12" type="cond" truecount="2" falsecount="0"/>
+          <line num="10" count="11" type="stmt"/>
+          <line num="11" count="11" type="stmt"/>
+          <line num="12" count="10" type="cond" truecount="2" falsecount="0"/>
           <line num="14" count="2" type="stmt"/>
           <line num="16" count="1" type="stmt"/>
         </file>
         <file name="ComponentHelper.js" path="/home/jay/codeBase/co-koa-cli/lib/helpers/ComponentHelper.js">
-          <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
           <line num="3" count="1" type="stmt"/>
           <line num="4" count="1" type="stmt"/>
           <line num="6" count="1" type="stmt"/>
           <line num="8" count="1" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
-          <line num="16" count="4" type="stmt"/>
-          <line num="19" count="1" type="stmt"/>
-          <line num="23" count="1" type="stmt"/>
+          <line num="11" count="8" type="stmt"/>
+          <line num="12" count="8" type="cond" truecount="2" falsecount="0"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="15" count="8" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="24" count="8" type="stmt"/>
+          <line num="27" count="2" type="stmt"/>
+          <line num="31" count="2" type="stmt"/>
         </file>
         <file name="ProjectHelper.js" path="/home/jay/codeBase/co-koa-cli/lib/helpers/ProjectHelper.js">
           <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
