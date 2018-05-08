@@ -9,7 +9,7 @@ module.exports = {
       const coKoa = CoKoa(__dirname).launch();
       if (type === 'integration') {
         const harness = mongoosePlugin({
-          connectionString: 'mongodb://localhost:27017/e-bard-test'
+          connectionString: 'mongodb://localhost:27017/co-koa-test'
         });
         harness.init(coKoa.app, coKoa.$);
       }
