@@ -34,22 +34,31 @@ That's it, you're all setup!
 
 **CLI Options**
 ```
-  --version           Show version number                              [boolean]
+  --version                Show version number                         [boolean]
 
-  --create            build a new Co.Koa application in your current working
-                      directory or, if supplied, an absolute directory. Ensure
-                      you have permission to write!                     [string]
-
-  --createController  creates a Co.Koa Controller. Must be supplied with a name
-                      (without the word "Controller" appended to it).   [string]
-
-  --createModel       creates a Co.Koa Model. Must be supplied with a name.
+  --create                 build a new Co.Koa application in your current
+                           working directory or, if supplied, an absolute
+                           directory. Ensure you have permission to write!
                                                                         [string]
 
-  --createService     creates a Co.Koa Service. Must be supplied with a name
-                      (without the word "Service" appended to it).      [string]
+  --createController       creates a Co.Koa Controller. Must be supplied with a
+                           name (without the word "Controller" appended to it).
+                                                                        [string]
 
-  --help, -h          Show help                                        [boolean]
+  --createIntegrationTest  creates a Co.Koa Jest Integration Test. Must be
+                           supplied with a name.                        [string]
+
+  --createModel            creates a Co.Koa Model. Must be supplied with a name.
+                                                                        [string]
+
+  --createService          creates a Co.Koa Service. Must be supplied with a
+                           name (without the word "Service" appended to it).
+                                                                        [string]
+
+  --createUnitTest         creates a Co.Koa Jest Unit Test. Must be supplied
+                           with a name.                                 [string]
+
+  --help, -h               Show help                                   [boolean]
 ```
 
 for more information on **Co.Koa** and its installation, navigate to <a href="https://github.com/jaysaurus/Co.Koa">the Co.Koa github page</a>.

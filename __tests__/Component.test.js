@@ -30,6 +30,9 @@ describe('Component tests', () => {
 
     component.build('createIntegrationTest', 'Example');
     expect(observer[4]).toBe('dir/_test/Example.integration.test.js');
+
+    component.build('createUnitTest', 'Example');
+    expect(observer[6]).toBe('dir/_test/Example.unit.test.js');
   });
   test('build returns an error message because no component name was supplied', () => {
     let exitValue = undefined;

@@ -4,11 +4,17 @@
   "description": "A Model View Controller built on Koa",
   "main": "app.js",
   "scripts": {
-    "test": "jest --coverage",
-    "test-watch": "nodemon --exec 'npm test'",
     "cokoa": "node app.js",
-    "dev-with-vue": "node app.js & cd public && npm run dev",
-    "public": "cd public && npm run"
+    "createModel": "npx co-koa-cli --createModel",
+    "createController": "npx co-koa-cli --createController",
+    "createService": "npx co-koa-cli --createService",
+    "dev-vue": "node app.js & cd public && npm run dev",
+    "public": "cd public && npm run",
+    "integration-tests": "jest --coverage .\\.integration\\.test\\.js",
+    "unit-tests": "jest --coverage .\\.unit\\.test\\.js",
+    "test": "jest --coverage",
+    "test-debug": "nodemon --inspect-brk node_modules/.bin/jest --runInBand",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "jest": {
     "roots": ["_test"],
@@ -29,6 +35,6 @@
     "co-koa-mongoose-plugin": "^1.7.0"
   },
   "devDependencies": {
-    "co-koa-cli": "^1.16.0"
+    "co-koa-cli": "^1.17.0"
   }
 }
