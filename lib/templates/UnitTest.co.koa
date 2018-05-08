@@ -1,5 +1,4 @@
 const testHarness = require('../app.test.harness.js');
-// if running tests in a batch, consider using
 const coKoa = testHarness.init({ type: 'unit' });
 describe('Unit Test Suite For #name#', async () => {
   const $ = coKoa.$
@@ -7,7 +6,7 @@ describe('Unit Test Suite For #name#', async () => {
 
   test('A unit test', async () => {
     try {
-      
+
     } catch (e) {
       console.error(e.message)
     }

@@ -1,5 +1,4 @@
 const testHarness = require('../app.test.harness.js');
-// if running tests in a batch, consider using
 const coKoa = testHarness.init({ port: #port#, type: 'integration' });
 describe('Integration Test Suite For #name#', async () => {
   const $ = coKoa.$
