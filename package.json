@@ -33,18 +33,18 @@
   },
   "homepage": "https://github.com/jaysaurus/co.koa-cli#readme",
   "devDependencies": {
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-uglify": "^3.0.0",
-    "jest": "^22.4.2",
+    "jest": "^23.0.1",
     "pump": "^3.0.0",
     "uglify-es": "^3.3.9"
   },
   "dependencies": {
     "echo-handler": "^1.8.2",
-    "fs-extra": "^5.0.0",
+    "fs-extra": "^6.0.1",
     "run-sequence": "^2.2.1",
-    "stampit": "^4.0.2",
+    "stampit": "^4.1.1",
     "yargs": "^11.0.0"
   }
 }
