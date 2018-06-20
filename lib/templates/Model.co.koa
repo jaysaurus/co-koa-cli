@@ -3,6 +3,7 @@
 module.exports = function #name# ($) {
   return {
     _modelType: 'mongoose',
+    // _nest: 0, // <- enable model to be nested in other models
     schema: {} // <- Model details go here
     /* ------ OPTIONAL COMPONENTS ----- */
     // hooks: {}, // <- pre/post event hooks
