@@ -11,7 +11,8 @@ module.exports = (env, errorHandler) => {
           if (spy && typeof spy === 'object') spy.push(message);
           break;
         case 'production':
-          // Live logging goes here.
+          // Live logging goes here, for example writing to a log file/etc.
+          console[method](`[${new Date()}] ${message}`);
           break;
         default:
           errorHandler();

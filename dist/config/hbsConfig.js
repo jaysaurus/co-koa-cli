@@ -1,5 +1,4 @@
 module.exports = (conf) => {
-  const bluebird = require('bluebird');
   return {
     // cacheExpires: 60,
     // contentTag: 'content',
@@ -12,6 +11,6 @@ module.exports = (conf) => {
       partials: `${conf.root}/api/views/partials`,
       helpers: `${conf.root}/api/views/helpers`
     },
-    Promise: bluebird
+    Promise: Promise
   };
 };
