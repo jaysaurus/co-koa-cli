@@ -24,5 +24,5 @@ module.exports = {
     'koa-locale': true,
     '@koa/cors': true
   },
-  'welcomeMessage': false
+  'welcomeMessage': true
 };
