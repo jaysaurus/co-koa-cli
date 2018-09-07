@@ -34,8 +34,6 @@
   "homepage": "https://github.com/jaysaurus/co.koa-cli#readme",
   "devDependencies": {
     "coveralls": "^3.0.1",
-    "gulp": "^3.9.1",
-    "gulp-uglify": "^3.0.0",
     "jest": "^23.1.0",
     "pump": "^3.0.0",
     "uglify-es": "^3.3.9"

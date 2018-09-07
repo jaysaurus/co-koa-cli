@@ -1,4 +1,5 @@
 module.exports = {
+  'bodyParser': {},
   'cors': {
     'allowMethods': 'GET,HEAD,PUT,POST,DELETE,PATCH',
     'origin': '*',
