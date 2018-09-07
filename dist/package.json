@@ -31,10 +31,10 @@
   "license": "MIT",
   "repository": "#repository#",
   "dependencies": {
-    "co-koa-core": "^1.18.0",
+    "co-koa-core": "^1.18.1",
     "co-koa-mongoose-plugin": "^1.8.0"
   },
   "devDependencies": {
-    "co-koa-cli": "^1.21.1"
+    "co-koa-cli": "^1.21.2"
   }
 }
